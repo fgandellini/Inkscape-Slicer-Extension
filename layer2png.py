@@ -233,7 +233,7 @@ class ExportSlices(inkex.Effect):
         """
         node_id = node.attrib['id']
         #name = "%s_%s_%s.png" % (node_id, height, width)
-        name = "%s_%s.png" % (node_id, height, width)
+        name = "%s_%s.png" % (node_id, height)
         self.export_node(node, name, height, width)
 
     def export_original_size(self, node):
